@@ -8,10 +8,10 @@ package decoratorpattern;
  */
 public class DecoratorPattern {
     public static void main(String[] args) {
-        Mike mike = new Mike(new Starbucks());
-        System.out.println(mike.getPrice());
-        System.out.println(mike.getDesc());
-        System.out.println(new Mike(mike).getPrice());
-        System.out.println(new Mike(mike).getDesc());
+        Milk milk = new Milk(new Starbucks());
+        System.out.println(milk.getPrice());
+        System.out.println(milk.getDesc());
+        System.out.println(new Milk(milk).getPrice());
+        System.out.println(new Milk(milk).getDesc());
     }
 }
